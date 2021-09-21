@@ -1,0 +1,9 @@
+<p><img loading="lazy" class="with-border aligncenter wp-image-63675 size-full" src="https://www.elegantthemes.com/blog/wp-content/uploads/2017/10/rmd6.png" alt="restaurant menu design" width="880" height="432" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2017/10/rmd6.png 880w, https://www.elegantthemes.com/blog/wp-content/uploads/2017/10/rmd6-300x147.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2017/10/rmd6-768x377.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2017/10/rmd6-610x299.png 610w" sizes="(max-width: 880px) 100vw, 880px">
+</p>
+
+css
+
+img.with-border {
+    border-radius: 8px;
+    box-shadow: 0 8px 60px 0 rgb(103 151 255 / 11%), 0 12px 90px 0 rgb(103 151 255 / 11%);
+}

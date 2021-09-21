@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminNav.master.cs" Inherits="WebApplication2.AdminNav" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+    <link href="AdminStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style>
+table.customTable {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #7EA8F8;
+  border-style: solid;
+  color: #000000;
+}
+
+table.customTable td, table.customTable th {
+  border-width: 2px;
+  border-color: #7EA8F8;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.customTable thead {
+  background-color: #7EA8F8;
+}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav" style="background-color:rgb(9, 10, 47)">
+      <h4 style="font-family: 'Times New Roman'; font-size: xx-large; color: #FFFFFF">Fresh Groceries</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li style="font-size: large; font-family: 'Times New Roman'; font-style: normal"><a href="AdminDrashboard.aspx">Home</a></li>
+        <li style="font-family: 'times New Roman'; font-size: large; font-style: normal"><a href="Addfood.aspx">Add Groceries</a></li>
+          <li style="font-family: 'times New Roman'; font-size: large; font-style: normal"><a href="Viewfood.aspx">View Groceries</a></li>
+        <li style="font-family: 'times New Roman'; font-size: large; font-style: normal"><a href="ViewBooking.aspx">Bookings</a></li>
+        <li style="font-family: 'times New Roman'; font-size: large; font-style: normal"><a href="ViewUsers.aspx">View Users</a></li>
+          <li style="font-family: 'times New Roman'; font-size: large; font-style: normal"><a href="AdminLogin.aspx">Logout</a></li>
+      </ul><br>
+      
+    </div>
+      
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
